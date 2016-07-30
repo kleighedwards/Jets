@@ -16,13 +16,6 @@ public class Jet
 		this.mach = speed / 761.2F;
 		this.speed = this.mach;
 	}
-
-//	public void convertToMach(float speed)
-//	{
-//		float mach = speed / 761.2F;
-//		
-//		System.out.printf("%1$.2f %n", mach);
-//	}
 	
 	public String getModel() 
 	{
@@ -68,7 +61,7 @@ public class Jet
 
 	@Override
 	public String toString() {
-		return "Model: " + model + ", Speed: " + mach + ", Range: " + range + ", Price: " + price;
+		return "Model: " + model + ", Speed (in Mach): " + mach + ", Range: " + range + ", Price: " + price;
 	}
 	
 }

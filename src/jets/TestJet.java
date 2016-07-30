@@ -62,7 +62,8 @@ public class TestJet
 			if (choice == 4)
 			{	
 				System.out.println("Enter the model of the Jet: ");
-				String model = keyboard.next();
+				keyboard.nextLine();
+				String model = keyboard.nextLine();
 				
 				System.out.println("Enter the speed of the Jet (in mph): ");
 				float speed = keyboard.nextFloat();
@@ -90,13 +91,6 @@ public class TestJet
 			System.out.println(index + "\n");
 		}
 	}
-//	
-//	public static void convertToMach(float speed)
-//	{
-//		float mach = speed / 761.2F;
-//		
-//		System.out.printf("Speed converted to Mach: %1$.2f %n", mach);
-//	}
 	
 	public static Jet[] addJet(Jet newJet, Jet[] jets)
 	{
