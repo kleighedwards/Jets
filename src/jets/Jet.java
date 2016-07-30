@@ -4,18 +4,20 @@ public class Jet
 {
 	private String model;
 	private float speed;
+	private float mach;
 	private float range;
 	private float price;
 	
 	public Jet(String model, float speed, float range, float price)
 	{
 		this.model = model;
-		this.speed = speed;
 		this.range = range;
 		this.price = price;
+		this.mach = speed / 761.2F;
+		this.speed = this.mach;
 	}
 
-//	private void convertToMach(float speed)
+//	public void convertToMach(float speed)
 //	{
 //		float mach = speed / 761.2F;
 //		
@@ -34,12 +36,14 @@ public class Jet
 
 	public float getSpeed() 
 	{
+		this.speed = this.mach;
 		return speed;
 	}
 
 	public void setSpeed(float speed) 
 	{
-		this.speed = speed;
+		this.mach = speed / 761.2F;
+		this.mach = speed;
 	}
 
 	public float getRange() 
@@ -64,7 +68,7 @@ public class Jet
 
 	@Override
 	public String toString() {
-		return "Model: " + model + ", Speed: " + speed + ", Range: " + range + ", Price: " + price;
+		return "Model: " + model + ", Speed: " + mach + ", Range: " + range + ", Price: " + price;
 	}
 	
 }

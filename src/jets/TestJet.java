@@ -11,11 +11,11 @@ public class TestJet
 		int choice;
 		
 
-		Jet bigBertha = new Jet("Big Bertha", 3F, 5000F, 50000.00F);
-		Jet nannyMcPhee = new Jet("Nanny McPhee", 3.5F, 3000F, 60000.00F);
-		Jet silentJim = new Jet("Silent Jim", 4F, 3500F, 62000.00F);
-		Jet gandalfGrey = new Jet("Gandalf the Grey", 5F, 6000F, 80000.00F);
-		Jet gandalfWhite = new Jet("Gandalf the White", 7.5F, 9500F, 1000000.00F);
+		Jet bigBertha = new Jet("Big Bertha", 900F, 5000F, 50000.00F);
+		Jet nannyMcPhee = new Jet("Nanny McPhee", 750F, 3000F, 60000.00F);
+		Jet silentJim = new Jet("Silent Jim", 800F, 3500F, 62000.00F);
+		Jet gandalfGrey = new Jet("Gandalf the Grey", 850F, 6000F, 80000.00F);
+		Jet gandalfWhite = new Jet("Gandalf the White", 950F, 9500F, 1000000.00F);
 		
 		Jet[] jets = new Jet[5]; 
 		jets[0] = bigBertha;
@@ -66,7 +66,6 @@ public class TestJet
 				
 				System.out.println("Enter the speed of the Jet (in mph): ");
 				float speed = keyboard.nextFloat();
-				convertToMach(speed);
 				
 				System.out.println("Enter the range the Jet can fly (in miles): ");
 				float range = keyboard.nextFloat();
@@ -91,13 +90,13 @@ public class TestJet
 			System.out.println(index + "\n");
 		}
 	}
-	
-	public static void convertToMach(float speed)
-	{
-		float mach = speed / 761.2F;
-		
-		System.out.printf("Speed converted to Mach: %1$.2f %n", mach);
-	}
+//	
+//	public static void convertToMach(float speed)
+//	{
+//		float mach = speed / 761.2F;
+//		
+//		System.out.printf("Speed converted to Mach: %1$.2f %n", mach);
+//	}
 	
 	public static Jet[] addJet(Jet newJet, Jet[] jets)
 	{
