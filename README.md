@@ -1,6 +1,6 @@
 # Skill Distillery Week 2 Project
 
-# "Jets" - An Intro to Object Oriented Programming
+## "Jets" - An Intro to Object Oriented Programming
 
 Upon launching this program, the user is shown a menu with a variety of options to choose from. 
 
